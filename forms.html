@@ -1,0 +1,195 @@
+<html>
+    <head>
+        <title> HTML FORMS </title>
+        <style>
+            div{ background-color:turquoise; color:black;}
+            form{ background-color:black; color:wheat;}
+            hr{ background-color:lightgrey; height: 1px; border:none;}
+            h1{ color:black; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+            #gg{color:royalblue; background-color: paleturquoise;}
+            .heading{font-size: 100px; font-family: fantasy;}
+        </style>
+    </head>
+    <body>
+        <pre>
+        <p>  
+        <marquee class="heading"> HTML FORMS </marquee>
+        </p>
+        <h2> An <mark id="gg">HTML form</mark> is used to collect user input. The user input is most often sent to a server for processing.</h2>
+<hr>
+        <div>
+            <h2><u> EXAMPLE </u></h2>
+            <form>
+                <label for="box1"> First Name: </label>
+                <input type="text" name="First Name" id="box1" value="John">
+                <br>
+                <label for="box2"> Last Name: </label>
+                <input type="text" name="Last Name" id="box2" value="Doe">
+                <br>
+                <input type="submit" value="submit">
+            </form>
+
+             TRY IT YOURSELF>>FILL THE ENTRIES 
+        </div>
+        <hr>
+        <h1> The &lt;form&gt; Element </h1>
+<font size="4"> The HTML <mark id="gg">&lt;form&gt;</mark> element is used to create an HTML form for user input: </font>
+         <div>
+            &lt;form&gt;
+                .
+            form elements 
+                . 
+            &lt;form&gt;  
+        
+        </div>
+        
+        <p><font size="4"> The <mark id="gg">&lt;form&gt;</mark> element is a container for different types of input elements, such as:<u> text fields, checkboxes, radio buttons, submit buttons, etc.</u>
+        </font></p>
+ <hr>
+     <h1> The &lt;input&gt; Element </h1>
+
+<font size="4"> The HTML <mark id="gg">&lt;input&gt;</mark> element is the most used form element. <br>
+ An < input&gt; element can be displayed in many ways, depending on the <u>type attribute.</u>
+<br> Here are some examples:</font>
+      
+          <table  height="100" width="1000" cellspacing="3" cellpadding="7" align="center">
+              <tr bgcolor="turquoise">
+                  <th> TYPE </th>
+                  <th> DESCRIPTION </th>
+              </tr>
+
+              <tr bgcolor="plum">
+                  <td> &lt;input type="text"&gt; </td>
+                  <td> Displays a single-line text input field </td>
+              </tr>
+
+              <tr bgcolor="plum">
+                  <td> &lt;input type="radio"&gt; </td>
+                  <td> Displays a radio button (for selecting one of many choices) </td>
+                </tr>
+
+              <tr bgcolor="plum">
+                  <td> &lt;input type="checkbox"&gt; </td>
+                  <td> Displays a checkbox (for selecting zero or more of many choices) </td>
+              </tr>
+
+              <tr bgcolor="plum">
+                  <td> &lt;input type="submit"&gt;	</td>
+                  <td> Displays a submit button (for submitting the form)</td>
+              </tr>
+
+              <tr bgcolor="plum">
+                  <td> &lt;input type="button"&gt; </td>
+                  <td> Displays a clickable button </td>
+              </tr>
+          </table>
+ <hr>    
+    <h1> Text Fields </h1>
+<font size="4"> The <mark id="gg">&lt;input type="text"&gt;</mark> defines a single-line input field for text input.</p></font>
+
+<div>
+    <u><h2> EXAMPLE </h2></u>
+   <font size="4"> A form with input fields for text:</font>
+   <br>
+<img src="form1.png">
+<br>
+</div>
+  
+<font size="4"> This is how the HTML code above will be displayed in a browser:</font>
+
+<form>
+   <label for="fname">First name:</label><br>
+   <input type="text" id="fname" name="fname"><br>
+   <label for="lname">Last name:</label><br>
+   <input type="text" id="lname" name="lname"><br>
+</form>
+
+<hr>
+     <h1> The &lt;label&gt; Element </h1>
+<font size="4"> Notice the use of the  <mark id="gg">&lt;label&gt;</mark> element in the example above.
+
+ The <mark id="gg"> &lt;label&gt;</mark> tag defines a label for many form elements.
+        
+ The <mark id="gg">&lt;label&gt;</mark> element is useful for screen-reader users, because the screen-reader will read out loud the label when the user focus<br> on the input element.
+        
+ The <mark id="gg">&lt;label&gt;</mark> element also help users who have difficulty clicking on very small regions (such as radio buttons or checkboxes) - <br> because when the user clicks the text within the <label> element, it toggles the radio button/checkbox.
+        
+ The for attribute of the <mark id="gg">&lt;label&gt;</mark> tag should be equal to the id attribute of the < input > element to bind them together.
+
+</font>
+<hr>
+  <h1> Radio Buttons </h1>
+<font size="4"> The <mark id="gg">&lt;input type="radio"&gt;</mark> defines a radio button. <br>
+ Radio buttons let a user select ONE of a limited number of choices.</font>
+
+<div>
+    <u><h2> EXAMPLE </h2></u>
+<h3> A form with radio buttons:</h3>
+<img src="formpic2.png">
+<br>
+</div>
+
+<font size="4"> This is how the HTML code above will be displayed in a browser: </font>
+
+<form>
+  <font size="4"> Choose your favorite Web language:</font><br>
+  <input type="radio" id="html" name="fav_language" value="HTML"><label for="html">HTML</label><br>
+  <input type="radio" id="css" name="fav_language" value="CSS"><label for="css">CSS</label><br>
+  <input type="radio" id="javascript" name="fav_language" value="JavaScript"><label for="javascript">JavaScript</label><br>
+</form>
+<hr>
+<h1> CHECKBOXES </h1>
+<font size="4"> The <mark id="gg">&lt;input type="checkbox"&gt;</mark> defines a <strong> checkbox </strong>.<br>
+ Checkboxes let a user select ZERO or MORE options of a limited number of choices. </font>
+ <div>
+    <u><h2> EXAMPLE </h2></u>
+<h3> A form with checkboxes:</h3>
+<img src="formpic3.png">
+<br>
+</div>
+
+<font size="4"> This is how the HTML code above will be displayed in a browser: </font>
+
+<form>
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"><label for="vehicle1"> I have a bike</label><br>
+    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car"><label for="vehicle2"> I have a car</label><br>
+    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat"><label for="vehicle3"> I have a boat</label>
+  </form>
+<hr>
+<h1> The Submit Button </h1>
+<font size="4"> The <mark id="gg">&lt;input type="submit"&gt;
+</mark> defines a button for submitting the form data to a form-handler.<br>
+ The form-handler is typically a file on the server with a script for processing input data.<br>
+ The form-handler is specified in the form's <mark id="gg">action</mark> attribute. </font>
+ 
+<div>
+    <u><h2> EXAMPLE </h2></u>
+<h3> A form with submit button:</h3>
+<img src="formpic4.png">
+<br >
+</div>
+
+<font size="4"> This is how the HTML code above will be displayed in a browser: </font>
+
+<form action="/action_page.php">
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="John"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+    <input type="submit" value="Submit">
+  </form>
+<hr>
+<h1> The Name Attribute for &lt;input&gt; </h1>
+<font size="4"> Notice that each input field must have a <mark id="gg">name</mark> attribute to be submitted.<br>
+ If the <mark id="gg">name</mark> attribute is omitted, the value of the input field will not be sent at all. </font>
+
+ <div>
+    <u><h2> EXAMPLE </h2></u>
+<h3> This example will not submit the value of the "First name" input field: </h3>
+<img src="formpic5.png">
+<br >
+</div>
+        </pre>
+
+    </body>
+</html>

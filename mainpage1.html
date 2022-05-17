@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>
+            BRAINOCITY
+        </title>
+        <link rel="stylesheet" href="mainpagecss1.css">
+        <link rel="icon" type="x-icon" href="C:\Users\varnika\OneDrive\Pictures\Screenshots\logo.png">
+   
+    </head>
+
+    <body>
+        <div class="main">
+            <nav>
+                <div class="logo">
+                    <img src="logo.PNG">
+                    <h1 id="heading">BRAINOCITY</h1>
+                </div>
+        
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="mainpage1.html">Home</a></li>
+                        <li><a href="loginpage1.html">Log In</a></li>
+                        <li><a href="signup1.html">Sign Up</a></li>
+                        <li><a href="contactus1.html">Contact Us</contactus1></a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="content">
+                <div class="hide"></div>
+                <img src="picbrainocity.jpg" class="pic">
+                <div id="circle">
+                    <div class="feature one">
+                        <h1>HTML</HTML></h1><a href="courses.html" style="text-decoration: none;">notes</a>
+                    </div>
+                    <div class="feature two"><h1><a href="html_practice.pdf" style="text-decoration: none;">Practice Questions</a></h1></div>
+                    <div class="feature three"><h1>JavaScript</h1><a href="coursesjs.html" style="text-decoration: none;">notes</a></div>
+                    <div class="feature four"><h1><br><br><br><br><br><br>Css</h1><a href="coursescss.html" style="text-decoration: none;">notes</a></div>
+
+                </div>
+            </div>
+
+            <div class="controls">
+                <img src="arrow.png" id="upbtn">
+                <h3>Get Started</h3>
+                <img src="arrow.png" id="downbtn">
+
+
+            </div>
+        </div>
+
+        <script>
+            var circle = document.getElementById("circle");
+            var upbtn = document.getElementById("upbtn");
+            var downbtn = document.getElementById("downbtn");
+
+            var rotateValue = circle.style.transform;
+            var rotateSum;
+
+            upbtn.onclick= function()
+            {
+                rotateSum = rotateValue + "rotate(-90deg)";
+                circle.style.transform = rotateSum;
+                rotateValue = rotateSum;
+            }
+
+            downbtn.onclick = function()
+            {
+                rotateSum = rotateValue + "rotate(90deg)";
+                circle.style.transform = rotateSum;
+                rotateValue = rotateSum;
+            } 
+        </script>
+
+    </body>
+</html>

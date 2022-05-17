@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Us</title>
+        <link rel="stylesheet" type="text/css" href="contactus1css.css">
+        <script language="JavaScript" type="text/javascript">
+            function checkuseremail(form){
+				if(form.username.value==""){
+					alert("Your Name");
+					return false;
+				}
+				if(form.email.value==""){
+					alert ("Your Email");
+					return false;
+				}
+				if(form.username.value==="abcd" && form.email.value==="abcde@gmail.com" && form.message.value==="hellobrainocity"){
+					alert("Send Successful");
+					return true;
+				}
+				else{
+					alert("Send failed");
+				}
+			}
+        </script>
+    </head>
+    <body>
+        <div class="contact-title">
+            <h1>Contact Us</h1>
+        </div>
+        <div class="contact-form">
+            <form onSubmit="return checkuseremail(this)">
+            <input name="name" type="text" class="form-control" placeholder="Your Name" required>
+            <br>
+            <input name="email" type="email" class="form-control" placeholder="Your email" required><br>
+            <textarea name="message" class="form-control" placeholder="Message" rows="4" required></textarea><br>
+            <input type="submit" class="form-control submit" value="Send Messgae">
+            </form>
+        </div>
+
+    <body>
+</html>

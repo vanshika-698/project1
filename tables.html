@@ -1,0 +1,130 @@
+<html>
+    <head>
+        <title>Tables</title>
+        <style>
+            h1{color:black;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+            .heading{font-size:100px;}
+            hr{ background-color:lightgray ; height:1px; border:none;}
+            div{background-color:turquoise; color:black;}
+          
+        </style>
+        <body>
+            <marquee><h1 class="heading">TABLES IN HTML</h1></marquee>
+            <h3><p>In this article, we will know the HTML Table, various ways to implement it, & will also understand its usage through the examples. HTML Table is an arrangement of data in rows and columns, or possibly in a more complex structure. Tables are widely used in communication, research, and data analysis. Tables are useful for various tasks such as presenting text information and numerical data. It can be used to compare two or more items in the tabular form layout. Tables are used to create databases.</p></h3>
+<hr>
+            <h1><li>The &lt;TABLE&gt;&lt;/TABLE&gt; elements has four sub-elements:</li></h1>
+            <ol>
+                <li>Table Row&lt;TR&gt;&lt;/TR&gt;.</li>
+                <li>Table Header &lt;TH&gt;&lt;/TH&gt;.</li>
+                <li>Table Data &lt;TD&gt;&lt;/TD&gt;.</li>
+                <li>Caption &lt;CAPTION&gt;&lt;/CAPTION&gt;.</li>
+            </ol>
+            <ul>
+                <h2><li>Table cells</li></h2>
+                <ul type="none">
+                    <h3><p>Each table cell is defined by a &lt;td&gt; and a &lt;/td&gt; tag.
+                        td stands for table data.
+                        Everything between &lt;td&gt; and &lt;/td&gt; are the content of the table cell.</p></h3>
+
+                </ul>
+                <h2><li>Table Rows</li></h2>
+                <ul type="none">
+                    <h3><p>Each table row starts with a &lt;tr&gt; and end with a &lt;/tr&gt; tag.
+                        tr stands for table row.</p></h3>
+                </ul>
+                <h2><li>Table Captions</li></h2>
+                <ul type="none">
+                    <h3><p>A table caption allows you to specify a line of text that will appear centered above or
+                        below the table.</p></h3>
+
+                </ul>
+            </ul>
+            <div><br>
+            <h2><u> EXAMPLE </u></h2>
+            <h3> In this example, we are creating a simple table in HTML using a table tag. </h3>
+            <p>&lt;html&gt;<br>
+ 
+                &lt;body&gt;<br>
+                &lt;table&gt;<br>
+                &lt;tr&gt;<br>
+                &lt;th&gt;Book Name&lt;/th&gt;<br>
+                &lt;th&gt;Author Name&lt;/th&gt;<br>
+                &lt;th&gt;Genre&lt;/th&gt;<br>
+                &lt;/tr&gt;<br>
+                &lt;tr&gt;<br>
+                &lt;td&gt;The Book Thief&lt;/td&gt;<br>
+                &lt;td&gt;Markus Zusak&lt;/td&gt;<br>
+                &lt;td&gt;Historical Fiction&lt;/td&gt;<br>
+                &lt;/tr&gt;<br>
+                &lt;tr&gt;<br>
+                &lt;td&gt;The Cruel Prince&lt;/td&gt;<br>
+                &lt;td&gt;Holly Black&lt;/td&gt;<br>
+                &lt;td&gt;Fantasy&lt;/td&gt;<br>
+                &lt;/tr&gt;<br>
+                &lt;tr&gt;<br>
+                &lt;td&gt;The Silent Patient&lt;/td&gt;<br>
+                &lt;td&gt; Alex Michaelides&lt;/td&gt;<br>
+                &lt;td&gt;Psychological Fiction&lt;/td&gt;<br>
+                &lt;/tr&gt;<br>
+                &lt;/table&gt;<br>
+                &lt;/body&gt;<br>
+                 
+                &lt;/html&gt;</p><br>
+            </div>
+                <ul>
+
+                    <h2><li>Table Header Attributes</li></h2>
+                    <ol>
+                        <li><p><h3>Colspan:</h3><h4>Specifies how many cell columns of the table this cell should span.</h4></p></li>
+                        <li><p><h3>Rowspan:</h3><h4>Specifies how many cell rows of the table this cell should span.</h4></p></li>
+                        <li><p><h3>Align:</h3><h4>cell data can have left, right, or center alignment.</h4></p></li>
+                        <li><p><h3>Width:</h3><h4>you can specify the width as an absolute number of pixels or a percentage
+                            of the document width.</h4></p></li>
+                        <li><p><h3>Valign:</h3><h4>cell data can have top, middle, or bottom alignment.</h4></p></li>
+                        <li><p><h3>Height:</h3><h4>You can specify the height as an absolute number of pixels or a
+                            percentage of the document height.</h4></p></li>
+
+<br><hr><br>
+                    </ol>
+
+                    <ul type="disc">
+                        <h2><li>About table borders</li></h2>
+                        <p>By default, tables are drawn without border lines. You need the BORDER attribute to
+                            draw the lines.</p>
+                    </ul>
+                    <ul>
+                        <h3><li>By default, a table is flush with the left margin.
+                            TABLEs are plopped over on the left margin. If you want centered tables, You can
+                            either: place the table inside a DIV element with attribute ALIGN=&quot;center&quot;.
+                            Most current browsers also supports table alignment, using the ALIGN attribute. Allowed
+                            values are &quot;left&quot;, &quot;right&quot;, or &quot;center&quot;, for example: &lt;TABLE ALIGN=&quot;left&quot;&gt;. The values
+                            &quot;left&quot; and &quot;right&quot; float the table to the left or right of the page, with text flow allowed
+                            around the table. This is entirely equivalent to IMG alignment</li></h3>
+                    </ul>
+                </ul>
+
+            <div><br>
+                <u><p><h2>EXAMPLE</h2></p></u>
+                <p>th, td {<br>
+                    border: 1px solid black;<br>
+                    border-radius: 10px;<br>
+                  }</p><br>
+            </div>
+
+<br><br><hr><br>
+
+                <h2>HOW TO ADD A BORDER TO A TABLE</h2>  
+                <div><br><p><h4>When you add a border to a table, you also add borders around each table cell:</h4></p>
+                <p><img src="table 1.png"></p><br><br></div>
+<br><br><hr><br>
+                <h2>DOTTED TABLE BORDERS</h2>
+                <p>With the border-style property, you can set the appereance of the border.</p>
+                <img src="table 2.png">
+<br><br><hr><br>
+                <h2>BORDER COLOR PROPERTY</h2>
+                <P>With the border-color property, you can set the color of the border.</P>
+                <img src="table3.png">
+
+        </body>        
+    </head>
+</html>        

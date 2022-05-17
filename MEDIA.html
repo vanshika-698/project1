@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <title>Media Tags</title>
+        <style>
+            h1{color:black;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+            .heading{font-size:100px;}
+            hr{ background-color:lightgray ; height:1px; border:none;}
+            div{background-color:turquoise; color:black;}
+          
+        </style>
+        <body>
+            <marquee> <h1  class="heading">MEDIA TAGS IN HTML</h1> </marquee>
+            <h3>The HTML &lt;audio&gt; and &lt;video&gt; tags make it simple to add media to a website. You need to set src attribute to identify the media source and include a controls attribute so the user can play and pause the media.</h3>
+<hr>            
+            <h1>The &lt;audio&gt; Tag</h1>
+            <p><h2>The audio tag allows you to put a music file directly into the HTML code without the use of a plugin, such as Flash or Javascript. There are three types of audio formats that are compatible with this tag: .ogg, .mp3 and .wav. However, some of these file types will only work with certain browsers. Here is a handy chart to show you which files are compatible with each browser.
+            </h2></p>
+            <img src="media1.png">
+            <div id="abc"><h2><u>EXAMPLE:</u></h2>
+            <p>&lt;!DOCTYPE HTML&gt;<br>
+
+                &lt;html&gt;<br>
+                &lt;body&gt;<br>
+                      
+                &lt;audio controls autoplay&gt;<br>
+                &lt;source src = "/html5/audio.ogg" type = "audio/ogg" /&gt;<br>
+                &lt;source src = "/html5/audio.wav" type = "audio/wav" /&gt;<br>
+                         Your browser does not support the &lt;audio&gt; element.<br>
+                         &lt;/audio&gt;<br>
+                      
+                         &lt;/body&gt;<br>
+                         &lt;/html&gt;</p><br></div>
+<br><hr><br>                         
+            <h1>The &lt;video&gt; Tag</h1>
+            <p><h2>The &lt;video&gt; tag is used to embed video content in a
+                document, such as a movie clip or other video streams.
+                The &lt;video&gt; tag contains one or more &lt;source&gt; tags
+                with different video sources. The browser will choose
+                the first source it supports.
+                The text between the &lt;video&gt; and &lt;/video&gt; tags will
+                only be displayed in browsers that do not support the
+                &lt;video&gt; element.</h2></p>             
+            <img src="media2.png">
+<br><hr><br>            
+            <div><h2><u>EXAMPLE:</u></h2>
+            <p><h4>&lt;!DOCTYPE HTML&gt;<br>
+
+                &lt;html&gt;<br>
+                  &lt;head&gt;<br>
+                   
+                      &lt;script type = "text/javascript"&gt;<br>
+                         function PlayVideo() {<br>
+                            var v = document.getElementsByTagName("video")[0];<br>  
+                            v.play();<br> 
+                         }<br>
+                      &lt;/script&gt;<br>
+                  &lt;/head&gt;<br>
+                   
+                  &lt;body&gt;<br>
+                   
+                     &lt;form&gt;<br>         
+                      &lt;video width = "300" height = "200" src = "/html5/foo.mp4"&gt;<br>
+                         Your browser does not support the video element.<br>
+                         &lt;/video&gt;<br>
+                         &lt;br /&gt;<br>
+                         &lt;input type = "button" onclick = "PlayVideo();" value = "Play"&gt;<br>
+                     &lt;/form&gt;<br>
+                      
+                   &lt;/body&gt;<br>
+                &lt;/html&gt;</h4></p></div><br>
+<br><hr><br>               
+            <img src="media3.png">
+            <img src="media4.png">
+<br><hr><br>            
+            <marquee> <h1  class="heading">HTML Favicon</h1> </marquee>
+            <h3>A favicon is a small image displayed next to the page title in the browser tab.</h3>
+<hr>            
+            <h1>How To Add a Favicon?</h1>
+            <p><h2>To add a favicon to your website, either save your favicon image to the root directory of your webserver, or create a folder in the root directory called images, and save your favicon image in this folder. A common name for a favicon image is "favicon.ico".<br>
+
+                Next, add a &lt;link&gt; element to your "index.html" file, after the &lt;title&gt; element, like this:</h2></p>
+            <div><p><h4>&lt;html&gt;<br>
+                &lt;head&gt;<br>
+                &lt;title&gt;My Page Title&lt;/title&gt;<br>
+                &lt;link rel=&quot;icon&quot; type=&quot;image/x-icon&quot;<br>
+                href=&quot;/images/favicon.ico&quot;&gt;<br>
+                
+                &lt;/head&gt;<br>
+                &lt;body&gt;<br>
+                &lt;h1&gt;This is a Heading&lt;/h1&gt;<br>
+                &lt;p&gt;This is a paragraph.&lt;/p&gt;<br>
+                &lt;/body&gt;<br>
+                &lt;/html&gt;</h4></p></div><br>    
+
+        </body>
+    </head>
+</html>
