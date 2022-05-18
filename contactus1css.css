@@ -8,7 +8,7 @@ body{
 	font-family: sans-serif;
 }
 .contact-title{
-    margin-top: 100px;
+    margin-top: 101px;
     text-transform: uppercase;
 }
 h1{
@@ -28,7 +28,7 @@ h1{
     outline: none;
     border-bottom: 1px solid gray;
     color: #fff;
-    font-size: 18px;
+    font-size: 19px;
     margin-bottom: 16px;
 }
 .contact-form input[type="text"], input[type="email"], input[type="message"]{
