@@ -38,7 +38,7 @@ nav{
 
 .nav-links{
     flex: 1;
-    text-align: right;
+    text-align: left;
 }
 
 .nav-links ul li{
@@ -54,7 +54,7 @@ nav{
 }
 
 .content{
-    width: 1000px;
+    width: 100px;
 
     height: 1000px;
     position:absolute;
