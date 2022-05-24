@@ -31,11 +31,11 @@ h1{
 }
 .login input{
 	width: 100%;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 .login input[type="text"], input[type="password"]{
 	border: none;
-	border-bottom: 2px solid #fff;
+	border-bottom: 3px solid #fff;
 	background: transparent;
 	outline: none;
 	height: 40px;
